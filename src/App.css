@@ -1,4 +1,37 @@
-.App {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* //GLOBAL */
+
+/* STRUCTURE */
+.app-wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+  grid-template-areas: 'header header header' 'nav content content';
+}
+
+.app-wrapper-content{
+  grid-area: content;
+  background-color: aquamarine;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +68,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

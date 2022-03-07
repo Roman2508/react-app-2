@@ -1,0 +1,7 @@
+.post__img{
+    width: 50px;
+    border-radius: 50%;
+}
+.post__info{
+    display: inline-block;
+}

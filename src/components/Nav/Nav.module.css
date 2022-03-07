@@ -1,0 +1,11 @@
+.nav {
+  grid-area: nav;
+  background-color: rgb(5, 141, 73);
+  padding: 20px;
+}
+.menu__link{
+  color: #fff;
+}
+.active{
+  color: gold;
+}
