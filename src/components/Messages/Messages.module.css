@@ -11,30 +11,12 @@
 }
 
 .messages__dialogs{
-    border-right: 1px solid rgb(95, 95, 95);
+    border-right: 1px solid rgb(0, 0, 0);
     padding-right: 40px;
     
 }
 
-.dialog{
-    display: block;
-    padding: 10px;
-}
-.active {
-    color: rgb(255, 0, 0);
-}
 
-.dialog::before{
-    position: absolute;
-    content: "";
-    width: 5px;
-    height: 5px;
-    color: #000;
-    left: 0;
-    top: 50%;
-    transform: translateX(-50%);
-    
-}
 
 .messages__content{
     padding-left: 20px;

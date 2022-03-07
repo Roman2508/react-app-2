@@ -1,0 +1,19 @@
+.dialog{
+    display: block;
+    padding: 10px;
+}
+.active {
+    color: gold;
+}
+
+.dialog::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    color: #000;
+    left: 0;
+    top: 50%;
+    transform: translateX(-50%);
+    
+}
