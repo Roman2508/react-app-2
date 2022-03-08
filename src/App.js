@@ -8,15 +8,18 @@ import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 
-function App() {
+function App(props) {
   return (
     <div className="app-wrapper">
       <Header />
       <Nav />
       <div className="app-wrapper-content">
         <Routes>
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/messages/*" element={<Messages />} />
+          <Route path="/profile" element={<Profile posts={props.posts} />} />
+          <Route
+            path="/messages/*"
+            element={<Messages dialogs={props.dialogs} messages={props.messages} />}
+          />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
           <Route path="/settings" element={<Settings />} />
