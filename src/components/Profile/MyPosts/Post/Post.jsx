@@ -2,7 +2,6 @@ import React from 'react';
 import classes from './Post.module.css';
 
 function Post(props) {
-  console.log(props.messages);
   return (
     <div className={classes.post}>
       <img
