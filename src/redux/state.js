@@ -1,4 +1,4 @@
-import { rerenderEntireTree } from "../index";
+import rerenderEntireTree from '../render';
 
 const state = {
   profilePage: {
@@ -31,7 +31,7 @@ export const addPost = (postText) => {
   };
 
   state.profilePage.posts.push(newPost);
-  rerenderEntireTree()
+  rerenderEntireTree(state);
 };
 
 export default state;
